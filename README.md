@@ -9,4 +9,6 @@ The are a lot of survey paper explaining that propietary model such as GPT 4.0 a
 
 ## Data Extraction from Marketaux API
 This image illustrates the process of extracting financial news articles using the Marketaux API. The workflow begins with the API retrieving 99 pages of news, amounting to a total of 297 articles. All of this data is then consolidated into a single JSON file. From this file, each news article is extracted separately, including only key elements such as the title, description, published date, and highlights. These individual pieces of information are then stored as unique documents, each representing a financial news item ready for further analysis.
+
+
 ![Diagrama en blanco - Página 1 (2)](https://github.com/user-attachments/assets/cf731986-3e10-40b2-8e0e-9006303a2eba)
