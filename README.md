@@ -26,3 +26,5 @@ Using Few-Shot Prompting, we guide the model by providing an example JSON with e
 For In-Context Learning, I applied it to relationships by explaining what the relationship should be and giving an example. For example, if we want to extract investment relationships, we might say, “The company invested in another company,” followed by an example like “NVIDIA invested in ARM.” For entities, I instructed the model on how to construct the summary and where to find the necessary information. For instance, if the goal is to summarize a news article, we might guide the model with instructions such as, “Summarize the key points related to company performance and its impact on stock prices,” and provide an example summary for reference.
 
 The importance of prompt engineering lies in its ability to precisely direct LLMs towards generating relevant and accurate outputs, which is crucial for achieving desired results and maintaining consistency in data extraction and analysis.
+
+The approach I'm using is based on a paper titled: [FinDKG: Dynamic Knowledge Graphs with Large Language Models for Detecting Global Trends in Financial Markets](https://arxiv.org/pdf/2407.10909)
