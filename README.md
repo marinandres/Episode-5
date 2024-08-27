@@ -29,7 +29,7 @@ The importance of prompt engineering lies in its ability to precisely direct LLM
 
 The approach I'm using is based on a paper titled: [FinDKG: Dynamic Knowledge Graphs with Large Language Models for Detecting Global Trends in Financial Markets](https://arxiv.org/pdf/2407.10909)
 
-## Construction of the Knowledge Graph**
+## Construction of the Knowledge Graph
 
 Our financial analyst stores all the information in the database using the function execute_query. The next step is to extract this information for various purposes, with a current focus on integrating the Mixtral LLM's analyzed data. By leveraging a Knowledge Graph, we can effectively organize and visualize complex financial data, mapping out entities like companies and their relationships, investment flows, and market conditions.
 
