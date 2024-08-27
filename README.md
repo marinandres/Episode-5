@@ -12,3 +12,17 @@ This image illustrates the process of extracting financial news articles using t
 
 
 ![Diagrama en blanco - Página 1 (2)](https://github.com/user-attachments/assets/cf731986-3e10-40b2-8e0e-9006303a2eba)
+
+## Hugging Face API and Mixtral
+1. **Set Up the API Client**: First, you need to connect to the Hugging Face API using a special tool called the Inference Client. This client allows you to interact with Mixtral without having to download or run the model on your own machine.
+2. **Prepare Your Message**: Before sending your message to Mixtral, you need to structure it properly. This involves creating a "system message" in this case this is our variable systeam_msg that sets the context as a financial analyst expert in extract information from financial news and a "user message" that contains the specific content or question you want the model to respond to in this case file_prompt is our variable containing the prompt engineering template and the financial news.
+3. **Send the Message**: With your message ready, you send it to Mixtral through the API. The model processes your input and starts generating a response. Depending on your setup, the response can be streamed back to you in chunks, allowing you to see the answer as it’s being formed.
+4. **Receive the Response**: The response from Mixtral is received in the form of text, which you can print out or further process. Since the response is streamed, you might collect it piece by piece and then combine it into a complete answer.
+Use the Response: Once you have the full response, you can use it in your application. For instance, you might extract keywords, summarize the content, or identify relationships within the data, depending on what you need for your project.
+
+## Prompt Engineering
+Using Few-Shot Prompting, we guide the model by providing an example JSON with entities, labels, and IDs. For instance, if we need the model to identify financial entities in news articles, we might provide a few examples such as “Company: NVIDIA” and “Product: GPU.” Similarly, when dealing with relationships, we might include examples like “NVIDIA acquired Mellanox Technologies” and specify the relationship types such as acquisition. This way, the model learns from the given examples and applies the same structure to new, unseen data.
+
+For In-Context Learning, I applied it to relationships by explaining what the relationship should be and giving an example. For example, if we want to extract investment relationships, we might say, “The company invested in another company,” followed by an example like “NVIDIA invested in ARM.” For entities, I instructed the model on how to construct the summary and where to find the necessary information. For instance, if the goal is to summarize a news article, we might guide the model with instructions such as, “Summarize the key points related to company performance and its impact on stock prices,” and provide an example summary for reference.
+
+The importance of prompt engineering lies in its ability to precisely direct LLMs towards generating relevant and accurate outputs, which is crucial for achieving desired results and maintaining consistency in data extraction and analysis.
