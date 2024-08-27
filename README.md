@@ -36,3 +36,6 @@ Our financial analyst stores all the information in the database using the funct
 The Knowledge Graph enhances our ability to analyze market trends by showing interconnected data points and their broader context. For instance, it allows us to understand how a new investment might impact related companies and market segments. This approach not only improves data accessibility but also supports more informed decision-making and strategic insights into financial interactions.
 
 This approach to data ingestion is inspired by a YouTube video, which I'll link to below: [How to Build Knowledge Graphs With LLMs (python tutorial)](https://www.youtube.com/watch?v=tcHIDCGu6Yw&t=1258s)
+
+<img width="1420" alt="image" src="https://github.com/user-attachments/assets/3a765a31-cbd8-4841-9ba8-61b7d3e98b52">
+
